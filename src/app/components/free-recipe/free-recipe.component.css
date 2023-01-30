@@ -48,3 +48,32 @@
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
 }
+
+
+
+.jumbo {
+	width: auto;
+	padding: 1em 0;
+	text-align: center;
+	height: 40vh;
+	margin: auto;
+	display: block;
+  margin-top: -5em;
+  margin-bottom: 1em;
+	background-image: url(https://static.pexels.com/photos/76093/pexels-photo-76093.jpeg);
+	background-position: top;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	-webkit-clip-path: ellipse(100% 100% at 50% 0%);
+	clip-path: ellipse(100% 100% at 50% 0%);
+}
+.jumbo h1 {
+	margin-top: 3em;
+	line-height: 2rem;
+	margin-bottom: 0.5em;
+	color: white;
+	-webkit-text-shadow: 2px 5px 10px rgba(0,0,0,0.75);
+    -moz-text-shadow: 2px 5px 10px rgba(0,0,0,0.75);
+    text-shadow: 2px 5px 10px rgba(0,0,0,0.75);
+}

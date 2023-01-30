@@ -49,3 +49,9 @@
       white-space: nowrap;
       -webkit-overflow-scrolling: touch;
     }
+
+.ngx{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}

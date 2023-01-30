@@ -12,8 +12,12 @@ export class DataService {
   constructor( private httpclient: HttpClient,
     private router: Router) {}
 
-    getRecipe(){
-      return this.httpclient.get('http://127.0.0.1:8000/api/home');
+    getRecipeSale(){
+      return this.httpclient.get('http://127.0.0.1:8000/api/sale');
+    }
+
+    getRecipeFree(){
+      return this.httpclient.get('http://127.0.0.1:8000/api/free');
     }
 
     getSearchTag(name : string){

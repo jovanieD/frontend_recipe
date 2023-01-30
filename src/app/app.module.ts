@@ -1,3 +1,4 @@
+import {NgxPaginationModule} from 'ngx-pagination';
 import { Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -17,7 +18,10 @@ import { RegisterComponent } from './components/register/register.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
 import { FreeRecipeComponent } from './components/free-recipe/free-recipe.component';
 import { UserHomeComponent } from './components/user-home/user-home.component';
-import { UserNavbarComponent } from './components/user-navbar/user-navbar.component'
+import { UserNavbarComponent } from './components/user-navbar/user-navbar.component';
+import { HomeOverviewComponent } from './components/home-overview/home-overview.component';
+import { FooterComponent } from './components/footer/footer.component';
+
 
 const appRoutes : Routes = [
 
@@ -49,13 +53,17 @@ const appRoutes : Routes = [
     FreeRecipeComponent,
     UserHomeComponent,
     UserNavbarComponent,
+    HomeOverviewComponent,
+    FooterComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent],
