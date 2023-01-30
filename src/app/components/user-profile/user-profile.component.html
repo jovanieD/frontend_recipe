@@ -1,0 +1,125 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+
+	<script src="https://use.fontawesome.com/07b0ce5d10.js"></script>
+
+
+
+
+    <div class="page-topbar">
+       <div class="logo-area"> </div>
+        <div class="quick-area">
+
+        <ul class="pull-left info-menu  user-notify">
+         <button id="menu_icon"><i class="fa fa-bars" aria-hidden="true"></i></button>
+         <li><a href="#"> <i class="fa fa-envelope"></i> <span class="badge">8</span></a></li>
+         <li><a href="#"> <i class="fa fa-bell"></i> <span class="badge">5</span></a></li>
+         </ul>
+
+       <ul class="pull-right info-menu user-info">
+         <li class="profile">
+             <a href="#" data-toggle="dropdown" class="toggle" aria-expanded="false">
+                 <img src="https://lh3.googleusercontent.com/-uwagl9sPHag/WM7WQa00ynI/AAAAAAAADso/ZGTVC0LVk1cFReheTbZzpGa2aawWyV8QACL0B/w140-d-h148-p-rw/profile-pic.jpg" class="img-circle img-inline">
+                 <span>Taylor <i class="fa fa-angle-down"></i></span>
+             </a>
+             <ul class="dropdown-menu profile fadeIn ">
+                        <li>
+                            <a href="#settings">
+                                <i class="fa fa-wrench"></i>
+                                Settings
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#profile">
+                                <i class="fa fa-user"></i>
+                                Profile
+                            </a>
+                        </li>
+
+                        <li class="last">
+                            <a href="ui-login.html">
+                                <i class="fa fa-lock"></i>
+                                Sign Out
+                            </a>
+                        </li>
+                    </ul>
+
+
+           </li>
+         </ul>
+
+    </div>
+    </div>
+
+    <div class="page-sidebar expandit">
+      <div class="sidebar-inner" id="main-menu-wrapper">
+         <div class="profile-info row ">
+           <div class=" ">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngall.com%2Fprofile-png&psig=AOvVaw3JC_nLs3TWQ0Yjk1PzfHJX&ust=1675123065505000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKjxk-397fwCFQAAAAAdAAAAABAD" alt="">
+            </div>
+             <div class="profile-details">
+                <h3>
+                    <a href="ui-profile.html">Shane Taylor</a>
+                </h3>
+                <p class="profile-title">Web Developer</p>
+
+            </div>
+          </div>
+
+          <ul class="wraplist" style="height: auto;">
+<!--          <li class="menusection">Main</li>-->
+          <li><a href=""><span class="sidebar-icon"><i class="fa fa-dashboard"></i></span> <span class="menu-title">Dashboard</span></a></li>
+          <li><a href=""><span class="sidebar-icon"><i class="fa fa-bullseye"></i></span> <span class="menu-title">Goal Management</span></a></li>
+          <li><a href=""><span class="sidebar-icon"><i class="fa fa-users"></i></span> <span class="menu-title">Manage Users</span></a></li>
+          <li><a href=""><span class="sidebar-icon"><i class="fa fa-calendar"></i></span> <span class="menu-title">Leaderboard</span></a></li>
+          <li><a href=""><span class="sidebar-icon"><i class="fa fa-suitcase"></i></span> <span class="menu-title">Meetings</span></a></li>
+          <li><a href=""><span class="sidebar-icon"><i class="fa fa-lock"></i></span> <span class="menu-title">Sign Out</span></a></li>
+          </ul>
+        </div>
+    </div>
+
+
+    <section id="main-content">
+     <section class="wrapper main-wrapper row">
+          <div class="col-md-6">
+              <section class="box"></section>
+         </div>
+          <div class="col-md-6">
+              <section class="box"></section>
+         </div>
+
+      <div class="clearfix"></div> <!--**************clearfix**************-->
+
+         <div class="col-md-12">
+              <section class="box"></section>
+         </div>
+
+        </section>
+    </section>
+<script>
+
+$(document).ready(function() {
+   $('#menu_icon').click(function() {
+      if ($('.page-sidebar').hasClass('expandit')){
+          $('.page-sidebar').addClass('collapseit');
+          $('.page-sidebar').removeClass('expandit');
+          $('.profile-info').addClass('short-profile');
+          $('.logo-area').addClass('logo-icon');
+          $('#main-content').addClass('sidebar_shift');
+          $('.menu-title').css("display", "none");
+  } else {
+    $('.page-sidebar').addClass('expandit');
+    $('.page-sidebar').removeClass('collapseit');
+    $('.profile-info').removeClass('short-profile');
+      $('.logo-area').removeClass('logo-icon');
+      $('#main-content').removeClass('sidebar_shift');
+      $('.menu-title').css("display", "inline-block");
+  }
+});
+
+});
+</script>

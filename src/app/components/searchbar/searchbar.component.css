@@ -1,0 +1,54 @@
+
+.jumbo {
+	width: auto;
+	padding: 1em 0;
+	text-align: center;
+	height: 50vh;
+	margin: auto;
+  margin-top: 50px;
+	display: block;
+	background-image: url(https://static.pexels.com/photos/76093/pexels-photo-76093.jpeg);
+	background-position: top;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	-webkit-clip-path: ellipse(100% 100% at 50% 0%);
+	clip-path: ellipse(100% 100% at 50% 0%);
+}
+.jumbo h1 {
+	margin-top: 2em;
+	line-height: 2rem;
+	margin-bottom: 0.5em;
+	color: white;
+	-webkit-text-shadow: 2px 5px 10px rgba(0,0,0,0.75);
+    -moz-text-shadow: 2px 5px 10px rgba(0,0,0,0.75);
+    text-shadow: 2px 5px 10px rgba(0,0,0,0.75);
+}
+.search {
+	border: 0;
+	background-color: white;
+	width: 40vw;
+	margin: auto;
+	padding: 0.3em;
+	display: flex;
+	border-radius: 3px;
+	-webkit-box-shadow: 5px 5px 25px 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 25px 0 rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 25px 0 rgba(0,0,0,0.75);
+}
+.search input {
+	padding: 10px;
+	width: 80%;
+	border: 0;
+	margin-left: 0;
+	flex-grow: 0;
+}
+.search button {
+	width: 20%;
+	background-color: lightsalmon;
+	color: white;
+	text-transform: uppercase;
+	border: 0;
+	cursor: pointer;
+	flex-grow: 0;
+}
